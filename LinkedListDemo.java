@@ -8,10 +8,12 @@ public class LinkedListDemo {
 		LinkedList list = new LinkedList();
 
 		list.append(56);
-		
+
+		list.append(30);
+
 		list.append(70);
-		
-		list.insertAfter(list.head,30);
+
+		list.insertAfter(list.head.next, 40);
 
 		list.printList();
 
