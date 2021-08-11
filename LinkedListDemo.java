@@ -9,15 +9,11 @@ public class LinkedListDemo {
 
 		LinkedList list = new LinkedList();
 
-		list.head = new Node(56);
-		Node secondNode = new Node(30);
-		Node thirdNode = new Node(70);
-
-		// linking first node to secondNode
-		list.head.next = secondNode;
-		// linking second node to third node
-		secondNode.next = thirdNode;
-		list.printList();
+	    list.add(70);
+	    list.add(30);
+	    list.add(56);
+	    list.printList();
+		
 
 	}
 
