@@ -17,6 +17,10 @@ public class LinkedListDemo {
 
 		list.printList();
 
+		list.deleteNode(40);
+		System.out.println("Node with element '40' is deleted in below");
+		list.printList();
+
 	}
 
 }
