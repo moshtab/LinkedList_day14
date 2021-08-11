@@ -17,9 +17,17 @@ public class LinkedListDemo {
 
 		list.printList();
 
-		list.deleteNode(56);
-		System.out.println("Node with element '40' is deleted in below");
+		// delete's the node with key 40
+		list.deleteNode(40);
+		System.out.println();
 		list.printList();
+		System.out.println();
+
+		// Searching the element
+		if (list.search(list.head, 30))
+			System.out.printf("Yes %s is present",30);
+		else
+			System.out.println("No element matching");
 
 	}
 

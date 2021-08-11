@@ -41,16 +41,42 @@ class LinkedList {
 
 	public void deleteNode(int key) {
 		// Store head node
-		Node temp = head;
+		Node temp = head, prev = null;
 
 		// If head node itself holds the key to be deleted
 		if (temp != null && temp.data == key) {
-			head = temp.next; // changed head
+			head = temp.next; // Changed head
 			return;
 		}
 
-		
+		// Search for the key to be deleted, keep track of
+		// the previous node as we need to change temp.next
+		while (temp != null && temp.data != key) {
+			prev = temp;
+			temp = temp.next;
+		}
+
+		// If key was not present in linked list
+		if (temp == null)
+			return;
+
+		// Unlink the node from linked list
+		prev.next = temp.next;
+
 	}
+
+    //Checks whether the value x is present in linked list
+    public boolean search(Node head, int x)
+    {
+        Node current = head;    //Initialize current
+        while (current != null)
+        {
+            if (current.data == x)
+                return true;    //data found
+            current = current.next;
+        }
+        return false;    //data not found
+    }
 
 	public void printList() {
 		Node n = head;
