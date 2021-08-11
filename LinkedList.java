@@ -14,15 +14,19 @@ class LinkedList {
 		}
 	}
 
-	public void add(int data) {
+	// Method for adding the elements of list
+	public void append(int data) {
 		if (head == null) {
 			head = new Node(data);
-			
-		}else {
-		Node newNode = new Node(data);
-		newNode.next = head;
-		head = newNode;
+			return;
 		}
+		Node newNode = new Node(data);
+		newNode.next = null;
+
+		Node last = head;
+		while (last.next != null)
+			last = last.next;
+		last.next = newNode;
 	}
 
 	public void printList() {

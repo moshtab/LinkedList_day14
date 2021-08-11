@@ -1,7 +1,5 @@
 package day14_LinkedList;
 
-import day14_LinkedList.LinkedList.Node;
-
 public class LinkedListDemo {
 
 	public static void main(String[] args) {
@@ -9,11 +7,11 @@ public class LinkedListDemo {
 
 		LinkedList list = new LinkedList();
 
-	    list.add(70);
-	    list.add(30);
-	    list.add(56);
-	    list.printList();
-		
+		list.append(56);
+		list.append(30);
+		list.append(70);
+
+		list.printList();
 
 	}
 
