@@ -28,6 +28,15 @@ class LinkedList {
 			last = last.next;
 		last.next = newNode;
 	}
+	public void insertAfter(Node prev_node,int data) {
+		if(prev_node==null) {
+			System.out.println("The given previous node cannot be null");
+			return;
+		}
+		Node newNode = new Node(data);
+		newNode.next=prev_node.next;
+		prev_node.next=newNode;
+	}
 
 	public void printList() {
 		Node n = head;
