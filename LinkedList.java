@@ -47,7 +47,7 @@ class LinkedList implements IlinkedList {
 
 	public void insertAfter(Node prev_node, int data) {
 		if (prev_node == null) {
-			System.out.println("The given previous node cannot be null");
+			System.out.println("The given previous node  cannot be null ...");
 			return;
 		}
 		Node newNode = new Node(data);
