@@ -1,6 +1,22 @@
 package day14_LinkedList;
 
-class LinkedList {
+import day14_LinkedList.LinkedList.Node;
+
+interface IlinkedList {
+
+	void append(int data);
+
+	void insertAfter(Node prev_node, int data);
+
+	public void deleteNode(int key);
+
+	public boolean search(Node head, int x);
+
+	public void printList();
+
+}
+
+class LinkedList implements IlinkedList {
 	Node head;
 
 	// i have made Node class static because to access to main
@@ -65,18 +81,16 @@ class LinkedList {
 
 	}
 
-    //Checks whether the value x is present in linked list
-    public boolean search(Node head, int x)
-    {
-        Node current = head;    //Initialize current
-        while (current != null)
-        {
-            if (current.data == x)
-                return true;    //data found
-            current = current.next;
-        }
-        return false;    //data not found
-    }
+	// Checks whether the value x is present in linked list
+	public boolean search(Node head, int x) {
+		Node current = head; // Initialize current
+		while (current != null) {
+			if (current.data == x)
+				return true; // data found
+			current = current.next;
+		}
+		return false; // data not found
+	}
 
 	public void printList() {
 		Node n = head;
