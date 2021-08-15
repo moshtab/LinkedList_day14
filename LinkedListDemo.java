@@ -13,16 +13,10 @@ public class LinkedListDemo {
 
 		list.append(70);
 
-		list.insertAfter(list.head.next, 40);
-
-		list.printList();
-
-		// delete's the node with key 40
-		list.deleteNode(40);
-		System.out.println();
+		
 		list.printList();
 		System.out.println();
-
+		
 		// Searching the element
 		if (list.search(list.head, 30))
 			System.out.printf("Yes %s is present",30);
