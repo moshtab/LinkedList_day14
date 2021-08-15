@@ -18,12 +18,8 @@ public class LinkedListDemo {
 
 		// printing the keys of nodes
 		list.printList();
-		System.out.println(); {
+		System.out.println(); 
 			
-		}
-
-		
-		
 		//deleting last node
 		list.deleteLastNode(list.head);
 		list.printList();
