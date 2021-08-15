@@ -1,7 +1,5 @@
 package day14_LinkedList;
 
-import day14_LinkedList.LinkedList.Node;
-
 interface IlinkedList {
 
 	void append(int data);
@@ -15,12 +13,7 @@ interface IlinkedList {
 	public void printList();
 
 }
-
-class LinkedList implements IlinkedList {
-	Node head;
-
-	// i have made Node class static because to access to main
-	static class Node {
+class Node {
 		int data;
 		Node next;
 
@@ -29,6 +22,9 @@ class LinkedList implements IlinkedList {
 			next = null;
 		}
 	}
+
+class LinkedList implements IlinkedList {
+	Node head;
 
 	// Method for adding the elements of list
 	public void append(int data) {
