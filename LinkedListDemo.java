@@ -17,8 +17,7 @@ public class LinkedListDemo {
 
 		// inserting 40 after 30
 		list.insertAfter(list.head.next, 40);
-
-		// printing the keys of nodes
+                // printing the keys of nodes
 		list.printList();
 		System.out.println();
 
