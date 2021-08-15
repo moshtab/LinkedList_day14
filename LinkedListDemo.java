@@ -12,9 +12,10 @@ public class LinkedListDemo {
 		list.append(30);
 
 		list.append(70);
-
+		
+		list.printList();
+		
 		list.insertAfter(list.head.next, 40);
-
 		list.printList();
 
 	}
