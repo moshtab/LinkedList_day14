@@ -14,8 +14,8 @@ public class LinkedListDemo {
 		list.append(70);
 
 		list.insertAfter(list.head.next, 40);
-
-		list.printList();
+                list.printList();
+		System.out.println();
 
 		list.deleteNode(40);
 		System.out.println("Node with element '40' is deleted in below");
