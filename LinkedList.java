@@ -39,7 +39,7 @@ class LinkedList {
 		prev_node.next = newNode;
 	}
 
-	public void deleteNode(int key) {
+	public void deletefirstNode(int key) {
 		// Store head node
 		Node temp = head;
 
