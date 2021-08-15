@@ -14,11 +14,10 @@ public class LinkedListDemo {
 		list.append(70);
 
 		list.insertAfter(list.head.next, 40);
-
 		list.printList();
+		System.out.println();
 
-		list.deleteNode(56);
-		System.out.println("Node with element '40' is deleted in below");
+		list.deleteFirstNode(56);
 		list.printList();
 
 	}
