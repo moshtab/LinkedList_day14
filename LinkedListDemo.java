@@ -20,10 +20,10 @@ public class LinkedListDemo {
 
 		// printing the keys of nodes
 		list.printList();
+		System.out.println();
 
 		// delete's the node with key 40
 		list.deleteNode(40);
-		System.out.println();
 		list.printList();
 		System.out.println();
 
