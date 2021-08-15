@@ -1,10 +1,7 @@
 package day14_LinkedList;
 
-class LinkedList {
-	Node head;
 
-	// i have made Node class static because to access to main
-	static class Node {
+class Node {
 		int data;
 		Node next;
 
@@ -13,6 +10,8 @@ class LinkedList {
 			next = null;
 		}
 	}
+class LinkedList {
+	Node head;
 
 	// Method for adding the elements of list
 	public void append(int data) {
